@@ -1,0 +1,79 @@
+body{
+  background-color: azure;
+  font-family: Kanit, Cursive, sans-sans-serif;
+  font-size:17px
+  line-height: 1.6;
+}
+h1{
+  font-family: Kanit, Arial, sans-serif;
+  font-size: 3em;
+}
+
+.button{
+  background: orange;
+  padding: 1em 2em;
+  color: white;
+  border: 5 black;
+  border-radius: 50px;
+
+
+}
+
+.button:hover{
+  background: black;
+  border: 5 white;
+
+}
+
+.avatar {
+  align-items: center;
+  border-radius: 200px;
+  box-sizing: border-box;
+  border: 10px solid gray;
+}
+
+
+#modal{
+  font-size: 48px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index:1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%
+  overflow: auto;
+  background-color: azure;
+  opacity: 1;
+  display: none;
+}
+
+#quote-category {
+  background-color: white;
+  font-family: Kanit, sans-serif;
+
+
+
+
+
+
+}
+#modal-textbox {
+  background-color: gray;
+  height: 500px;
+  width: 550px;
+  border-radius: 2px;
+  margin: 150px auto;
+  box-shadow: 0 2px 2px black;
+}
+
+footer {
+  border-radius: 50px;
+  border-color: black;
+  margin: 30px;
+  font-size:12px
+  background-color: red;
+  margin-top: 5em;
+  padding-top: 4em;
+}

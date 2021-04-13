@@ -1,13 +1,26 @@
 body{
-  background-color: azure;
+  text-align: center;
+  background-color: lavender;
   font-family: Kanit, Cursive, sans-sans-serif;
-  font-size:17px
+  font-size:17px;
   line-height: 1.6;
 }
 h1{
+  display: block;
+  margin: 0em;
   font-family: Kanit, Arial, sans-serif;
   font-size: 3em;
 }
+p{
+  margin: 0;
+}
+.modal-container{
+  display: flex;
+  justify-content: center;
+}
+
+.h3{}
+
 
 .button{
   background: orange;
@@ -25,55 +38,80 @@ h1{
 
 }
 
+form{
+  display: block;
+  margin-top: 0em;
+
+
+
+
+}
 .avatar {
+  text-align: center;
   align-items: center;
   border-radius: 200px;
   box-sizing: border-box;
-  border: 10px solid gray;
+  border: 10px solid lightyellow;
 }
 
 
 #modal{
-  font-size: 48px;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  z-index:1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%
-  overflow: auto;
-  background-color: azure;
-  opacity: 1;
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: azure;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 1em;
+  border: 10px inset salmon;
+  box-shadow: 10px 10px 10px gray;
 }
 
 #quote-category {
   background-color: white;
   font-family: Kanit, sans-serif;
-
-
-
-
-
+  font-weight: bolder;
 
 }
 #modal-textbox {
-  background-color: gray;
-  height: 500px;
-  width: 550px;
+  font-size: 24px;
+  font-weight:bold;
+  background-color: azure;
+  font-family: cursive, sans-serif;
+  height: 100%;
+  width: 100%;
   border-radius: 2px;
   margin: 150px auto;
-  box-shadow: 0 2px 2px black;
+  box-shadow: 10 2px 2px black;
 }
 
+.modal-buttons {
+  background: orange;
+  padding: 1em 2em;
+  color: white;
+  border: 5 black;
+  border-radius: 50px;
+}
+
+.modal-button:hover{
+  background: black;
+  border: 5 white;
+
+}
+
+
 footer {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  bottom: 0;
   border-radius: 50px;
   border-color: black;
-  margin: 30px;
-  font-size:12px
-  background-color: red;
+  margin-top: 5em;
+  font-size:12px;
+  background-color: lavender;
   margin-top: 5em;
   padding-top: 4em;
 }

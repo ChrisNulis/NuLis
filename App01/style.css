@@ -14,13 +14,19 @@ h1{
 p{
   margin: 0;
 }
+
+.avatar {
+  text-align: center;
+  align-items: center;
+  border-radius: 200px;
+  box-sizing: border-box;
+  border: 10px solid azure;
+}
+
 .modal-container{
   display: flex;
   justify-content: center;
 }
-
-.h3{}
-
 
 .button{
   background: orange;
@@ -28,32 +34,17 @@ p{
   color: white;
   border: 5 black;
   border-radius: 50px;
-
-
 }
 
 .button:hover{
   background: black;
   border: 5 white;
-
 }
 
 form{
   display: block;
   margin-top: 0em;
-
-
-
-
 }
-.avatar {
-  text-align: center;
-  align-items: center;
-  border-radius: 200px;
-  box-sizing: border-box;
-  border: 10px solid lightyellow;
-}
-
 
 #modal{
   display: none;
@@ -62,11 +53,14 @@ form{
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: azure;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 50%;
   border-radius: 1em;
-  border: 10px inset salmon;
+  border: 10px inset lightblue;
   box-shadow: 10px 10px 10px gray;
+  margin-top: 5em;
+  z-index: 1;
+  overflow: auto;
 }
 
 #quote-category {
@@ -76,14 +70,14 @@ form{
 
 }
 #modal-textbox {
-  font-size: 24px;
-  font-weight:bold;
+  font-size: 36px;
+  font-weight:bolder;
   background-color: azure;
-  font-family: cursive, sans-serif;
-  height: 100%;
+  font-family: Cookie, sans-serif;
+  height: 80%;
   width: 100%;
   border-radius: 2px;
-  margin: 150px auto;
+  margin: 10px auto;
   box-shadow: 10 2px 2px black;
 }
 
@@ -100,18 +94,51 @@ form{
   border: 5 white;
 
 }
-
-
 footer {
   position: absolute;
   padding: 0;
   width: 100%;
   bottom: 0;
-  border-radius: 50px;
-  border-color: black;
   margin-top: 5em;
   font-size:12px;
-  background-color: lavender;
   margin-top: 5em;
   padding-top: 4em;
+}
+
+@media (max-width: 500px) {
+  #modal{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+    max-width: 80%;
+    max-height: 50%;
+    border-radius: 1em;
+    border: 10px inset lightblue;
+    box-shadow: 10px 10px 10px gray;
+    margin-top: 5em;
+    z-index: 1;
+    overflow: auto;
+  }
+
+  #quote-category {
+    background-color: white;
+    font-family: Kanit, sans-serif;
+    font-weight: normal;
+
+  }
+  #modal-textbox {
+    max font-size: 12px;
+    font-weight:bolder;
+    background-color: azure;
+    font-family: Cookie, sans-serif;
+    max height: 50%;
+    max width: 80%;
+    border-radius: 2px;
+    margin: 10px auto;
+    box-shadow: 5px 1px 1px black;
+  }
+
 }
